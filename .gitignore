@@ -8,3 +8,6 @@ obj/
 
 # Guías de defensa: material personal, nunca se suben a GitHub
 guia-defensa-*.md
+
+# Paquetes de Unity del profe: contienen sprites con copyright, solo en local
+proyectos-unity/plataformas/paquetes/

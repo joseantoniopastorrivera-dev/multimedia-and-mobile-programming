@@ -65,6 +65,15 @@ En casa:
 - **Sprites rosas:** el render pipeline no coincide. Crea el proyecto con la plantilla correcta (Universal 2D, que es URP).
 - **La escena está vacía:** estás viendo la SampleScene antigua. Ábrela otra vez desde `Assets/Scenes`.
 
+## Lo que hizo el profe en clase (19/11/2026, contado de palabra)
+
+1. **Sprite del personaje:** usó una imagen de un soldado estilo Metal Slug como sprite del jugador.
+2. **Ejes y giro:** explicó los ejes (X horizontal, Y vertical; en 2D, Z solo indica profundidad) y cómo girar al personaje cuando cambia de dirección (fichas 04 y 05).
+3. **Spawn de monedas:** crear monedas desde un prefab con `Instantiate`, probablemente en posiciones aleatorias o cada cierto tiempo (fichas 08, 09, 12, 13 y 14).
+4. **Bala y función atacar/disparar:** crear la bala en la posición del arma, darle velocidad en la dirección a la que mira el jugador y destruirla al chocar o pasado un tiempo (fichas 06, 08, 10 y 11).
+
+Cuando suba el código del profe, comparar con esto y preparar ejercicios para el examen.
+
 ## Pendiente
 
 - [ ] Llevar el `.unitypackage` a casa (repo, correo o USB).
