@@ -11,3 +11,9 @@ guia-defensa-*.md
 
 # Paquetes de Unity del profe: contienen sprites con copyright, solo en local
 proyectos-unity/plataformas/paquetes/
+
+# Paquete del examen de Unity (solo en local)
+proyectos-unity/examen-arboles/*.unitypackage
+
+# Proyecto Unity de práctica para el examen: lleva Library/ y un sprite con copyright
+practica-examen-1/
