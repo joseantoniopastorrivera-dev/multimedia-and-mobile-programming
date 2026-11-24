@@ -7,6 +7,7 @@ public class Jugador : MonoBehaviour
 {
     [SerializeField] InputActionReference mover;   // acción Mover (1D Axis: flecha izquierda / flecha derecha)
     [SerializeField] float velocidad = 10;         // el enunciado pide 10 unidades por segundo
+    [SerializeField] int puntos = 0;               // visible en el Inspector durante el Play
     Rigidbody2D rb;
 
     void Start()
@@ -30,4 +31,13 @@ public class Jugador : MonoBehaviour
         rb.linearVelocity = new Vector2(direccion * velocidad, 0); // Y = 0: nunca se mueve en vertical
     }
 
+    void OnTriggerEnter2D(Collider2D collision)    // la manzana tiene el collider en Is Trigger
+    {
+        if (collision.CompareTag("Manzana"))
+        {
+            Destroy(collision.gameObject);         // destruye la manzana, no la cesta
+            puntos += Random.Range(1, 4);          // int: el máximo NO entra → 1, 2 o 3
+            Debug.Log("Puntos: " + puntos);
+        }
+    }
 }
