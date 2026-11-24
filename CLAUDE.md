@@ -18,6 +18,7 @@ Transición de Java a C# y desarrollo con Unity.
 ## Estructura
 - `transicion-java-csharp/01-conceptos-basicos-y-condicionales/`, `02-bucles/`, `03-juegos/03-juegos/` — proyectos de consola .NET (`.csproj`, `net10.0`).
 - `fichas-unity/` — fichas teóricas de Unity en PDF (`ficha-NN-tema.pdf`, 1ª evaluación) y `caso-practico/` con el `.unitypackage` que las ilustra.
+- `proyectos-unity/` — examen de Unity de la 1ª evaluación: temario, chuleta (`apuntes-examen-unity`), guía paso a paso del editor, `plataformas/` (proyecto de clase y sus mejoras) y `examen-arboles/` (enunciado, scripts de la solución en `solucion/Scripts/` y guía de recuperación). Los `.unitypackage` del profe se quedan en local (`.gitignore`): traen sprites de terceros.
 
 ## Compilar y ejecutar
 - Consola: `dotnet run --project "transicion-java-csharp/02-bucles"` (cambia la carpeta).
