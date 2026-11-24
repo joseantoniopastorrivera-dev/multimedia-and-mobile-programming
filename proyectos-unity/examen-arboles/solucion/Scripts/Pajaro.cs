@@ -23,4 +23,13 @@ public class Pajaro : MonoBehaviour
         else if (transform.position.x < -borde)                 // llega al borde izquierdo
             transform.eulerAngles = new Vector3(0, 0, 0);       // vuelve a mirar a la derecha
     }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Manzana"))
+        {
+            Destroy(collision.gameObject);         // destruye la manzana
+            velocidad *= 1.5f;                     // +50 %: 5 → 7,5 → 11,25…
+        }
+    }
 }
