@@ -26,10 +26,6 @@ Transición de Java a C# y desarrollo con Unity.
 - Consola: `dotnet run --project "transicion-java-csharp/02-bucles"` (cambia la carpeta).
 - Unity: editor 6000.0.83f1 desde Unity Hub. El caso práctico se importa en un proyecto con *Assets → Import Package → Custom Package*.
 
-## Notas
-- Convenciones C#: PascalCase en métodos y propiedades, propiedades automáticas en lugar de getters/setters de Java.
-- En Unity no edites `ProjectSettings/` ni archivos `.meta` a mano; no subas `Library/`, `Temp/`, `Logs/`, `obj/`, `bin/`.
-
 ## Karpathy guidelines
 
 Source: <https://github.com/multica-ai/andrej-karpathy-skills> (CLAUDE.md at commit 2c60614, MIT, by forrestchang), derived from <https://x.com/karpathy/status/2015883857489522876>. Text copied verbatim below; only the file's own "# CLAUDE.md" title line was dropped, and blank lines, link brackets and a code-fence language were added so it passes markdownlint.
