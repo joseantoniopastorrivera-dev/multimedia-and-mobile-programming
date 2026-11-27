@@ -9,6 +9,7 @@ Reglas comunes a todos mis repos (copia de mi `C:\dev\CLAUDE.md`, para que tambi
 - Si ves un error de concepto o algo que no entiendo bien, dímelo aunque no te lo pregunte.
 - Responde en español.
 - No hagas commit ni push sin que te lo pida. Commits sin `Co-Authored-By` ni líneas de atribución.
+- **Commits en GitHub:** uno por cambio, nunca mezclados, cada uno con su push. Mensaje en inglés profesional y técnico (conventional commits: `type(scope): summary`, en imperativo), con un cuerpo que explica qué cambia y por qué.
 - **Pull requests en todos los repos (asignaturas y personales):** nunca se commitea directo en `main`. Una rama por cambio (nombre con guiones, sin barra: con barra GitHub dio error 500), sus commits pequeños, `gh pr create --fill --base main`, tests en local y CI en verde (`gh pr checks <n> --watch`), y `gh pr merge <n> --merge --delete-branch` (nunca squash, para que cada commit quede en el historial). Si el repo no tiene tests o CI para lo que cambia, dilo y propón añadirlos. Si la carpeta la comparten otras sesiones, trabaja en un worktree propio y no cambies de rama allí. Sigue valiendo que el commit, push y merge solo se hacen cuando yo lo pida.
 - No subas binarios generados (`target/`, `*.class`, `__pycache__/`, `*.pyc`, `bin/`, `obj/`, `Library/` de Unity).
 - Nunca leas, muestres ni subas ficheros `.env`, tokens ni credenciales.
@@ -24,10 +25,6 @@ Transición de Java a C# y desarrollo con Unity.
 ## Compilar y ejecutar
 - Consola: `dotnet run --project "transicion-java-csharp/02-bucles"` (cambia la carpeta).
 - Unity: editor 6000.0.83f1 desde Unity Hub. El caso práctico se importa en un proyecto con *Assets → Import Package → Custom Package*.
-
-## Notas
-- Convenciones C#: PascalCase en métodos y propiedades, propiedades automáticas en lugar de getters/setters de Java.
-- En Unity no edites `ProjectSettings/` ni archivos `.meta` a mano; no subas `Library/`, `Temp/`, `Logs/`, `obj/`, `bin/`.
 
 ## Karpathy guidelines
 
